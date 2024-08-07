@@ -1,5 +1,6 @@
 const formValues = document.querySelector(".percent_calculate_btns");
 const billAmount = document.querySelector(".amount");
+const billAmountInput = billAmount.querySelector(".bill")
 const Number_of_people = document.querySelector(".Number_of_people_input");
 const errorMSG = document.querySelector(".errorMSG_label .error_MSG");
 const tipAmount = document.querySelector(".results_box .tip_text");
@@ -60,6 +61,8 @@ function ResetPreResults() {
 	totalTipVar =  `$${(0).toFixed(2)}`;
 	tipAmount.innerHTML = tipAmountVar;
 	totalTip.innerHTML = totalTipVar;
+	billAmountInput.value = ""
+	Number_of_people.value = ""
 }
 
 customInput.addEventListener("input", asignValueToName);
