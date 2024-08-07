@@ -1,0 +1,239 @@
+body {
+	background-color: var(--Very_light_grayish_cyan);
+	font-size: 16px;
+	box-sizing: border-box;
+	font-family: "Space Mono";
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+	--Primary_Strong_cyan: hsl(172, 67%, 45%);
+
+	--Very_dark_cyan: hsl(183, 100%, 15%);
+	--Grayish_cyan: hsl(184, 14%, 56%);
+	--Dark_grayish_cyan: hsl(186, 14%, 43%);
+	--Light_grayish_cyan: hsl(185, 41%, 84%);
+	--Very_light_grayish_cyan: hsl(189, 41%, 97%);
+	--White: hsl(0, 0%, 100%)
+}
+
+.wrapper {
+	background-color: var(--White);
+	margin: 5em 0em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: var(--Dark_grayish_cyan);
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.wrapper .bill_cont {
+	margin: 2em 1.5em;
+}
+
+
+.wrapper .calculation_box .amount{
+	border-radius: 0.5em;
+	background-color: var(--Very_light_grayish_cyan);
+	padding: 0em 1em;
+	height: 4em;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper .calculation_box .amount:hover {
+	border: 0.2em solid var(--Grayish_cyan);
+}
+
+
+.wrapper .calculation_box .amount input#bill {
+	width: 100%;
+	height: 99%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 1.8em;
+	text-align: end;
+}
+
+.wrapper .select_tip_cont {
+	margin: 2em 1.5em;
+}
+
+.wrapper .select_tip_cont .percent_calculate_btns {
+	padding: 1em 0em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 4em);
+	gap: 1em;
+
+}
+
+.wrapper .select_tip_cont .percent_calculate_btns input{
+	background-color: var(--Very_dark_cyan);
+	color: white;
+	font-size: 1.5em;
+	border-radius: 0.25em;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	max-width: 100%;
+	min-width: 0;
+}
+
+.wrapper .select_tip_cont .percent_calculate_btns input[type="text"]{
+	background-color: var(--Very_light_grayish_cyan);
+	color: var(--Dark_grayish_cyan);
+	text-align: center;
+	border: 0.1em solid var(--Grayish_cyan);
+	outline: none;
+}
+
+.wrapper .Number_of_people_cont {
+	margin: 1em 1.5em;
+}
+
+.wrapper .Number_of_people_cont .Number_of_people {
+	margin: 0.5em 0em;
+	border-radius: 0.5em;
+	background-color: var(--Very_light_grayish_cyan);
+	padding: 0em 1em;
+	height: 4em;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper .Number_of_people_cont .errorMSG_label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.9em;
+}
+
+.wrapper .Number_of_people_cont .Number_of_people .Number_of_people_input {
+	width: 100%;
+	height: 99%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 1.8em;
+	text-align: end;
+}
+
+.wrapper .Number_of_people_cont .Number_of_people:hover {
+	border: 0.2em solid var(--Dark_grayish_cyan);
+}
+
+.wrapper .select_tip_cont .percent_calculate_btns input[type="button"]:hover {
+	background-color: var(--Primary_Strong_cyan);
+}
+
+.wrapper .results_box {
+	background-color: var(--Very_dark_cyan);
+	border-radius: 0.5em;
+	padding: 1em 1em;
+	margin: 1em 1.5em;
+}
+
+.wrapper .results_box .tip_amount {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper .results_box .tip_amount .tip_amount_label {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper .results_box .tip_amount .tip_amount_label .tip_amount_text{
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	color: var(--Light_grayish_cyan);
+	font-size: 1.1em;
+}
+
+.wrapper .results_box .tip_amount .tip_amount_label .person{
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+.wrapper .results_box .tip_amount .tip_text {
+	font-size: 2em;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	color:  var(--Primary_Strong_cyan);
+}
+
+.wrapper .results_box .tip_total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper .results_box .tip_total .tip_total_label {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper .results_box .tip_total .tip_total_label .tip_toatl_text {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	color: var(--Light_grayish_cyan);
+	font-size: 1.1em;
+}
+
+.wrapper .results_box .tip_total .tip_total_label .person {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+.wrapper .results_box .tip_total .total_text {
+	font-size: 2em;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	color:  var(--Primary_Strong_cyan);
+}
+
+.wrapper .results_box .reset_btn {
+	font-size: 1.8em;
+	padding: 0.5em 0.2em;
+	width: 100%;
+	background-color: var(--Primary_Strong_cyan);
+	border: none;
+	border-radius: 0.2em;
+	margin-top: 1em;
+}
+
+@media (min-width: 750px) {
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.wrapper .calculation_box {
+		flex-shrink: 1;
+		flex-grow: 1;
+		flex: 1;
+	}
+	.wrapper .results_box {
+		flex-shrink: 1;
+		flex-grow: 1;
+		flex: 1;
+	}
+
+	.wrapper .results_box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
